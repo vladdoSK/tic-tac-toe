@@ -1,0 +1,26 @@
+.players{
+    margin-left: 40px;
+    width: 360px;
+    height: 460px;
+    color: white;
+    padding-left: 10px;
+}
+
+.text, .text_1, .text_2{
+    margin-bottom: 25px;
+}
+
+.text_1.active, .text_2.active{
+    color:yellow;
+}
+
+.result{
+    margin-top: 100px;
+    font-size: 30px;
+    visibility: hidden;
+}
+
+.result.active
+{
+    visibility: visible;
+}

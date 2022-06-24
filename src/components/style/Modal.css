@@ -1,0 +1,106 @@
+.modal {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1);
+}
+
+.modal.active {
+    transform: scale(0);
+}
+
+.modal_content {
+    width: 800px;
+    height: 400px;
+    background: white;
+    border-radius: 20px;
+
+    background: linear-gradient(to left, rgb(5, 5, 119), rgb(155, 91, 91));
+    animation: gradient 5s ease infinite;
+    background-size: 200% 200%;
+}
+
+@keyframes gradient{
+    0% {
+      background-position: 0 50%;
+    }
+  
+    50% {
+      background-position: 100% 50%;
+    }
+  
+    100% {
+      background-position: 0 50%;
+    }
+  
+  }
+
+.name{
+    font-size: 30px;
+    color: white;
+}
+
+.greeting{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 15px;
+    color: white;
+}
+
+.block_name_1{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;  
+    padding:20px 200px 20px 200px;
+}
+
+.input_name{
+    width: 250px;
+    height:40px;
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+
+.empty{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color: red;
+    visibility:hidden;
+}
+
+.empty.active{
+    visibility:visible;
+}
+
+.button {
+    color: #a909b7;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    width: 300px;
+    text-decoration: none;
+    text-align: center;
+    margin: 20px 250px;
+    display: block;
+    background-image: linear-gradient(to left, transparent, transparent 50%, #a909b7 50%, #a909b7);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all .25s ease-in;
+    font: bold 18px tahoma;
+    border: 1px solid #a909b7;
+
+}
+
+.button:hover {
+    background-position: 0 0;
+    color: #fff;
+}
