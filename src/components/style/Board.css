@@ -1,8 +1,0 @@
-.board{
-    display: grid;
-    grid:155px 155px 155px / 155px 155px 155px;
-    gap:5px;
-    background: #830883;
-
-
-}
